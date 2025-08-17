@@ -397,17 +397,6 @@ const HTML_PAGE = `
     justify-content:center;         /* 垂直居中 */
     text-align:center;              /* 文本居中 */
   }
-  .footer-icons{
-    display:flex;
-    gap:12px;                       /* 两个图标的间距 */
-    align-items:center;
-    justify-content:center;
-    margin-bottom:6px;              /* 图标与文字的间距 */
-  }
-  .footer-icons img{
-    width:24px; height:24px;        /* 调整图标大小 */
-    display:block;
-  }
   .footer-copy{
     font-size:12px; color:#6b7280;  /* 灰色小字 */
   }
@@ -542,12 +531,7 @@ const HTML_PAGE = `
         </div>
     </div>
 
-    <footer>
-      <div class="footer-icons">
-        <a href="https://github.com/mengnanen" target="_blank"><img src="svg/github.svg" alt="GitHub"></a>
-        <a href="https://t.me/youwudailybot" target="_blank"><img src="svg/telegram.svg" alt="Telegram"></a>
-      </div>
-      
+    <footer>     
       <div class="footer-copy">
         Copyright © 2025 王小二. All rights reserved. Made with Love.
       </div>
@@ -944,6 +928,7 @@ function dateFormat() {
     const formattedDate = (new Date()).toUTCString().replace(/GMT/, "").trim() + " GMT";
     return formattedDate.toLowerCase();
 }
+
 
 
 
