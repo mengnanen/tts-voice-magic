@@ -517,12 +517,19 @@ const HTML_PAGE = `
         </div>
     </div>
 
-
-    <footer>
-    <div class="footer-icons">
-      <a href="https://github.com/mengnanen" target="_blank"><img src="svg/github.svg" alt="GitHub"></a>
-      <a href="https://t.me/youwudailybot" target="_blank"><img src="svg/telegram.svg" alt="Telegram"></a>
-    </div>
+    <footer class="w-full py-3 flex flex-col items-center justify-center text-center">
+      <div class="flex items-center justify-center gap-3 mb-2">
+        <a href="https://github.com/mengnanen" target="_blank">
+          <img src="svg/github.svg" alt="GitHub" class="w-6 h-6">
+        </a>
+        <a href="https://t.me/youwudailybot" target="_blank">
+          <img src="svg/telegram.svg" alt="Telegram" class="w-6 h-6">
+        </a>
+      </div>
+      <div class="text-xs text-gray-500">
+        Copyright © 2025 王小二. All rights reserved. Made with Love.
+      </div>
+    </footer>
     
     <div class="footer-copy">
       Copyright © 2025 王小二. All rights reserved. Made with Love.
@@ -921,6 +928,7 @@ function dateFormat() {
     const formattedDate = (new Date()).toUTCString().replace(/GMT/, "").trim() + " GMT";
     return formattedDate.toLowerCase();
 }
+
 
 
 
